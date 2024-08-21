@@ -7,7 +7,7 @@
 /* base layer */
 @layer base {
   p {
-    @apply font-roboto text-sm;
+    @apply font-roboto text-sm text-secondary;
   }
   h1,
   h2,
