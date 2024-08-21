@@ -6,9 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import "./banner.css";
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+
+
 
 // banner context
 const bannerContent = [
@@ -18,7 +20,8 @@ const bannerContent = [
     subheadline:
       "Leverage cutting-edge marketing strategies to elevate your brand.",
     cta: "Get Started",
-    backgroundImage: "path/to/cityscape-or-digital-network.jpg",
+    backgroundImage:
+      "https://img.freepik.com/free-vector/abstract-style-network-connection-background_23-2148876733.jpg",
   },
   {
     id: 2,
@@ -26,7 +29,8 @@ const bannerContent = [
     subheadline:
       "Discover our range of digital marketing services designed to drive results.",
     cta: "Learn More",
-    backgroundImage: "path/to/workspace-or-abstract-digital.jpg",
+    backgroundImage:
+      "https://img.freepik.com/free-photo/close-up-idea-concept_23-2148882593.jpg?t=st=1724228901~exp=1724232501~hmac=c655eda0ac986bedc278f24097027071241f41857b652ca59d2e303961e5f6a7&w=826",
   },
   {
     id: 3,
@@ -34,7 +38,8 @@ const bannerContent = [
     subheadline:
       "Harness the power of data-driven marketing to grow your audience and increase engagement.",
     cta: "Explore Services",
-    backgroundImage: "path/to/business-growth-chart.jpg",
+    backgroundImage:
+      "https://img.freepik.com/free-photo/corporate-business-handshake-partners_53876-102581.jpg?ga=GA1.1.376098937.1716077921&semt=ais_hybrid",
   },
   {
     id: 4,
@@ -42,7 +47,8 @@ const bannerContent = [
     subheadline:
       "Partner with us for tailored strategies that deliver measurable outcomes.",
     cta: "Contact Us",
-    backgroundImage: "path/to/professional-team.jpg",
+    backgroundImage:
+      "https://img.freepik.com/free-photo/cup-man-achievement-success-honor_1150-1719.jpg?ga=GA1.1.376098937.1716077921&semt=ais_hybrid",
   },
   {
     id: 5,
@@ -50,7 +56,8 @@ const bannerContent = [
     subheadline:
       "Utilize our expertise to stay at the forefront of digital marketing trends.",
     cta: "Request a Consultation",
-    backgroundImage: "path/to/high-tech-or-futuristic.jpg",
+    backgroundImage:
+      "https://img.freepik.com/free-photo/first-place-medal_23-2148930691.jpg?ga=GA1.1.376098937.1716077921&semt=ais_hybrid",
   },
 ];
 
@@ -74,16 +81,16 @@ function Banner() {
         >
           {/* single banner slide */}
           {bannerContent.map((banner, ind) => {
-            const { headline, subheadline, cta } = banner;
+            const { headline, subheadline, cta, backgroundImage } = banner;
 
             return (
               <>
                 <SwiperSlide key={ind}>
                   <div
                     style={{
-                      background: `linear-gradient(4deg, #a0a0a087, #0205234d), url(https://img.freepik.com/free-vector/abstract-style-network-connection-background_23-2148876733.jpg)`,
+                      background: `linear-gradient(4deg, #a0a0a087, #0205234d), url(${backgroundImage})`,
                     }}
-                    className="w-full h-screen min-h-[500px] !bg-no-repeat !bg-cover text-white flex flex-col justify-center items-center text-center "
+                    className="w-full h-screen min-h-[500px] !bg-no-repeat !bg-cover !bg-center text-white flex flex-col justify-center items-center text-center "
                   >
                     <div className="container space-y-3">
                       <h1 className="text-primary font-bold text-3xl lg:text-4xl">
