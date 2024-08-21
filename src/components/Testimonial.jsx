@@ -67,11 +67,11 @@ import { Autoplay, Navigation } from "swiper/modules";
 function Testimonial() {
   return (
     <>
-      {/* company projects */}
+      {/* testimonial */}
       <section className="py-6 md:py-8 lg:py-10 bg-white">
         <SectionTitle title={"Testimonials"}></SectionTitle>
 
-        {/* company projects */}
+        {/* testimonial */}
         <div className="mt-4 container">
           <Swiper
             breakpoints={{
