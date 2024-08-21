@@ -10,8 +10,6 @@ import "./banner.css";
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-
-
 // banner context
 const bannerContent = [
   {
