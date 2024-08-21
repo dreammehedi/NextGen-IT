@@ -34,44 +34,42 @@ const companyProject = [
 function Project() {
   return (
     <>
-      <>
+      {/* company projects */}
+      <section className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
+        <SectionTitle title={"Complete Projects"}></SectionTitle>
+
         {/* company projects */}
-        <section className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
-          <SectionTitle title={"Complete Projects"}></SectionTitle>
+        <div className="mt-4 container grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+          {/* project */}
+          {companyProject.map((project, ind) => {
+            const { title, description, image } = project;
+            return (
+              <>
+                <div
+                  key={ind}
+                  className="rounded-md overflow-hidden space-y-3 ring-1 ring-primary"
+                >
+                  {/* project image */}
+                  <img
+                    className="w-full h-[300px] object-cover my-transition hover:scale-[1.03] hover:cursor-pointer"
+                    src={image}
+                    alt={`project ${ind}`}
+                  />
 
-          {/* company projects */}
-          <div className="mt-4 container grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-            {/* project */}
-            {companyProject.map((project, ind) => {
-              const { title, description, image } = project;
-              return (
-                <>
-                  <div
-                    key={ind}
-                    className="rounded-md overflow-hidden space-y-3 ring-1 ring-primary"
-                  >
-                    {/* project image */}
-                    <img
-                      className="w-full h-[300px] object-cover my-transition hover:scale-[1.03] hover:cursor-pointer"
-                      src={image}
-                      alt={`project ${ind}`}
-                    />
-
-                    {/* project description */}
-                    <div className="p-4 space-y-2">
-                      <h3 className="text-primary font-semibold font-montserrat text-xl">
-                        {title}
-                      </h3>
-                      <p>{description}</p>
-                      <Button name={"View Detailes"}></Button>
-                    </div>
+                  {/* project description */}
+                  <div className="p-4 space-y-2">
+                    <h3 className="text-primary font-semibold font-montserrat text-xl">
+                      {title}
+                    </h3>
+                    <p>{description}</p>
+                    <Button name={"View Detailes"}></Button>
                   </div>
-                </>
-              );
-            })}
-          </div>
-        </section>
-      </>
+                </div>
+              </>
+            );
+          })}
+        </div>
+      </section>
     </>
   );
 }

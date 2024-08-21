@@ -68,7 +68,7 @@ function Service() {
               <>
                 <div
                   key={ind}
-                  className="bg-white rounded-md text-center px-5 py-7 lg:p-6 my-transition hover:shadow-md hover:shadow-gray-400 hover:cursor-pointer space-y-3 flex flex-col justify-center items-center"
+                  className="bg-white ring-1 ring-primary rounded-md text-center px-5 py-7 lg:p-6 my-transition hover:shadow-xl hover:shadow-primary/30 hover:cursor-pointer space-y-3 flex flex-col justify-center items-center"
                 >
                   <img
                     src={image}

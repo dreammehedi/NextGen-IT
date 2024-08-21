@@ -36,7 +36,7 @@ function Achievement() {
   return (
     <>
       {/* company achievement */}
-      <section className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
+      <section className="py-6 md:py-8 lg:py-10 bg-white">
         <SectionTitle title={"Our Achievement"}></SectionTitle>
 
         {/* company achievement */}
@@ -49,7 +49,7 @@ function Achievement() {
               <>
                 <div
                   key={ind}
-                  className="bg-white rounded-md px-5 py-7 lg:p-6 my-transition hover:shadow-md hover:shadow-gray-400 hover:cursor-pointer space-y-3 flex flex-col"
+                  className="bg-[#f9f9f9] rounded-md px-5 py-7 lg:p-6 my-transition hover:shadow-md hover:shadow-gray-400 hover:cursor-pointer space-y-3 flex flex-col"
                 >
                   <img
                     src={image}
