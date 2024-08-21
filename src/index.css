@@ -25,6 +25,6 @@
     @apply transition-all duration-300 ease-linear;
   }
   .btn {
-    @apply px-5 py-2 font-semibold rounded-md font-roboto text-primary bg-transparent my-transition;
+    @apply px-5 py-2 font-semibold rounded-md font-roboto ring-1 ring-primary text-primary bg-transparent my-transition;
   }
 }

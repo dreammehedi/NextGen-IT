@@ -4,6 +4,7 @@ export default {
   theme: {
     container: {
       center: true,
+      padding: "1.5rem",
     },
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
