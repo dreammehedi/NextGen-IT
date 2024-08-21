@@ -1,3 +1,4 @@
+import Achievement from "./components/Achievement";
 import Banner from "./components/Banner";
 import Service from "./components/Service";
 
@@ -8,6 +9,8 @@ function App() {
       <Banner></Banner>
       {/* Service */}
       <Service></Service>
+      {/* Acheivement */}
+      <Achievement></Achievement>
     </>
   );
 }
