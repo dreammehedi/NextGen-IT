@@ -63,10 +63,20 @@ function Banner() {
   return (
     <>
       {/* banner */}
-      <section id="banner" className="container rounded-md overflow-hidden">
+      <section
+        data-aos="zoom-in"
+        data-aos-duration="500"
+        data-aos-delay="0"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        data-aos-mirror="true"
+        id="banner"
+        className="container overflow-hidden"
+      >
         <Swiper
           spaceBetween={20}
           centeredSlides={true}
+          loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -76,7 +86,7 @@ function Banner() {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="rounded-md overflow-hidden"
+          className="rounded-md hover:cursor-pointer"
         >
           {/* single banner slide */}
           {bannerContent.map((banner, ind) => {

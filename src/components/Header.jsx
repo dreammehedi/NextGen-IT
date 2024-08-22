@@ -12,7 +12,15 @@ function Header() {
   return (
     <>
       {/* header */}
-      <header className="py-4 sticky top-0 z-[9999] bg-[#f9f9f9] shadow-md">
+      <header
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-offset="0"
+        data-aos-once="true"
+        className="py-4 sticky top-0 z-[9999] bg-[#f9f9f9] shadow-md"
+      >
         <nav className="relative container flex justify-between items-center gap-4">
           {/* logo */}
           <Logo></Logo>

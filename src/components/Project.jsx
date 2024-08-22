@@ -39,13 +39,20 @@ function Project() {
         <SectionTitle title={"Complete Projects"}></SectionTitle>
 
         {/* company projects */}
-        <div className="mt-4 container grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+        <div className="mt-4 container grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 py-2 overflow-hidden">
           {/* project */}
           {companyProject.map((project, ind) => {
             const { title, description, image } = project;
             return (
               <>
                 <div
+                  data-aos="zoom-in"
+                  data-aos-delay={ind * 200}
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
                   key={ind}
                   className="rounded-md overflow-hidden space-y-3 ring-1 ring-primary"
                 >

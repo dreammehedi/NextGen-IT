@@ -41,12 +41,26 @@ function Footer() {
   return (
     <>
       {/* footer */}
-      <footer className="py-6 md:py-8 lg:py-10 bg-white">
-        <div className="container">
+      <footer id="footer" className="py-6 md:py-8 lg:py-10 bg-white">
+        <div className="container py-2 overflow-hidden">
           {/* footer top */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+          <div
+            data-aos="zoom-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor="#footer"
+            className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+          >
             {/* company info */}
-            <div className="col-span-2 md:col-span-1">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor="#footer"
+              className="col-span-2 md:col-span-1"
+            >
               <Logo cls={"mb-4"}></Logo>
               <p>
                 Leading the way in innovative digital solutions, NextGen IT
@@ -56,7 +70,13 @@ function Footer() {
             </div>
 
             {/* quick links */}
-            <div className="">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor="#footer"
+            >
               <h4 className="text-lg font-semibold text-primary capitalize mb-4">
                 Quick Links
               </h4>
@@ -81,7 +101,13 @@ function Footer() {
             </div>
 
             {/* contact info */}
-            <div className="">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor="#footer"
+            >
               <h4 className="text-lg font-semibold text-primary capitalize mb-4">
                 Contact Us
               </h4>
@@ -95,7 +121,14 @@ function Footer() {
           </div>
 
           {/* footer bottom copyright */}
-          <div className="text-center mt-10">
+          <div
+            data-aos="zoom-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor="#footer"
+            className="text-center mt-10"
+          >
             <p>
               &copy; 2024 NextGen IT. All rights reserved. Develop By{" "}
               <a

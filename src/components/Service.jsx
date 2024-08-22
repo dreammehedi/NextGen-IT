@@ -59,7 +59,7 @@ function Service() {
         <SectionTitle title={"Our Services"}></SectionTitle>
 
         {/* company services */}
-        <div className="mt-4 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+        <div className="mt-4 py-2 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 overflow-hidden">
           {/* service */}
           {companyServices.map((service, ind) => {
             const { title, description, image } = service;
@@ -67,6 +67,14 @@ function Service() {
             return (
               <>
                 <div
+                  data-aos="fade-left"
+                  data-aos-delay={ind * 200}
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
+                  data-aos-anchor="#services"
                   key={ind}
                   className="bg-white ring-1 ring-primary rounded-md text-center px-5 py-7 lg:p-6 my-transition hover:shadow-xl hover:shadow-primary/30 hover:cursor-pointer space-y-3 flex flex-col justify-center items-center"
                 >

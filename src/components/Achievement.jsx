@@ -40,7 +40,7 @@ function Achievement() {
         <SectionTitle title={"Our Achievement"}></SectionTitle>
 
         {/* company achievement */}
-        <div className="mt-4 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+        <div className="mt-4 container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 py-2 overflow-hidden">
           {/* achievement */}
           {companyAchievements.map((achievement, ind) => {
             const { title, description, image } = achievement;
@@ -48,6 +48,13 @@ function Achievement() {
             return (
               <>
                 <div
+                  data-aos="fade-right"
+                  data-aos-delay={ind * 100}
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
                   key={ind}
                   className="bg-[#f9f9f9] rounded-md px-5 py-7 lg:p-6 my-transition hover:shadow-md hover:shadow-gray-400 hover:cursor-pointer space-y-3 flex flex-col"
                 >

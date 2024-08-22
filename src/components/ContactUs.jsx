@@ -24,9 +24,14 @@ function ContactUs() {
       {/* contact us */}
       <section id="contactus" className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
         <SectionTitle title={"Contact Us"}></SectionTitle>
-        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8 py-2 overflow-hidden">
           {/* google maps */}
-          <div className="rounded-md overflow-hidden md:h-fit h-[350px]">
+          <div
+            data-aos="fade-right"
+            data-aos-duration={1000}
+            data-aos-delay={300}
+            className="rounded-md overflow-hidden md:h-fit h-[350px]"
+          >
             <Map
               height={470}
               center={center}
@@ -58,7 +63,13 @@ function ContactUs() {
           </div>
 
           {/* contact form */}
-          <form onSubmit={handleContactUs} className="space-y-4">
+          <form
+            data-aos="fade-left"
+            data-aos-duration={1000}
+            data-aos-delay={600}
+            onSubmit={handleContactUs}
+            className="space-y-4"
+          >
             <div className="space-y-2">
               <label
                 htmlFor="name"

@@ -104,7 +104,12 @@ function Testimonial() {
               return (
                 <>
                   <SwiperSlide key={ind}>
-                    <div className="bg-[#f9f9f9] p-4 rounded-md shadow-md my-transition hover:shadow-primary/30 hover:scale-[1.03] hover:cursor-pointer h-fit md:h-[300px] space-y-2">
+                    <div
+                      data-aos="zoom-in"
+                      data-aos-duration="1000"
+                      data-aos-delay={ind * 200}
+                      className="bg-[#f9f9f9] p-4 rounded-md shadow-md my-transition hover:shadow-primary/30 hover:scale-[1.03] hover:cursor-pointer h-fit md:h-[300px] space-y-2"
+                    >
                       <img
                         src={image}
                         alt={name}
