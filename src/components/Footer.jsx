@@ -1,40 +1,42 @@
 import Logo from "../shared/Logo";
 
 // quick links data
-const quickLinks = [
-  {
-    title: "Home",
-    link: "/",
-  },
-  {
-    title: "Services",
-    link: "#services",
-  },
-  {
-    title: "Projects",
-    link: "#projects",
-  },
-  {
-    title: "About Us",
-    link: "#aboutus",
-  },
-  {
-    title: "Contact Us",
-    link: "#contactus",
-  },
-  {
-    title: "Careers",
-    link: "#careers",
-  },
-  {
-    title: "Privacy Policy",
-    link: "#privacy-policy",
-  },
-  {
-    title: "Terms of Service",
-    link: "#terms-of-service",
-  },
-];
+import menu from "./Menu";
+
+// const quickLinks = [
+//   {
+//     title: "Home",
+//     link: "/",
+//   },
+//   {
+//     title: "Services",
+//     link: "#services",
+//   },
+//   {
+//     title: "Projects",
+//     link: "#projects",
+//   },
+//   {
+//     title: "About Us",
+//     link: "#aboutus",
+//   },
+//   {
+//     title: "Contact Us",
+//     link: "#contactus",
+//   },
+//   {
+//     title: "Careers",
+//     link: "#careers",
+//   },
+//   {
+//     title: "Privacy Policy",
+//     link: "#privacy-policy",
+//   },
+//   {
+//     title: "Terms of Service",
+//     link: "#terms-of-service",
+//   },
+// ];
 
 function Footer() {
   return (
@@ -60,7 +62,7 @@ function Footer() {
                 Quick Links
               </h4>
               <ul className="grid grid-cols-2 gap-4">
-                {quickLinks.map((quickLink, ind) => {
+                {menu.map((quickLink, ind) => {
                   const { title, link } = quickLink;
 
                   return (

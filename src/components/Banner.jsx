@@ -63,7 +63,7 @@ function Banner() {
   return (
     <>
       {/* banner */}
-      <section>
+      <section id="banner" className="container rounded-md overflow-hidden">
         <Swiper
           spaceBetween={20}
           centeredSlides={true}
@@ -76,6 +76,7 @@ function Banner() {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
+          className="rounded-md overflow-hidden"
         >
           {/* single banner slide */}
           {bannerContent.map((banner, ind) => {
@@ -88,7 +89,7 @@ function Banner() {
                     style={{
                       background: `linear-gradient(4deg, #a0a0a087, #0205234d), url(${backgroundImage})`,
                     }}
-                    className="w-full h-screen min-h-[500px] !bg-no-repeat !bg-cover !bg-center text-white flex flex-col justify-center items-center text-center "
+                    className="w-full h-[600px] rounded-md overflow-hidden min-h-[500px] !bg-no-repeat !bg-cover !bg-center text-white flex flex-col justify-center items-center text-center "
                   >
                     <div className="container space-y-3">
                       <h1 className="text-primary font-bold text-3xl lg:text-4xl">

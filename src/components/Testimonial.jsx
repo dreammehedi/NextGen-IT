@@ -68,7 +68,7 @@ function Testimonial() {
   return (
     <>
       {/* testimonial */}
-      <section className="py-6 md:py-8 lg:py-10 bg-white">
+      <section id="testimonials" className="py-6 md:py-8 lg:py-10 bg-white">
         <SectionTitle title={"Testimonials"}></SectionTitle>
 
         {/* testimonial */}

@@ -36,7 +36,7 @@ function Achievement() {
   return (
     <>
       {/* company achievement */}
-      <section className="py-6 md:py-8 lg:py-10 bg-white">
+      <section id="achievements" className="py-6 md:py-8 lg:py-10 bg-white">
         <SectionTitle title={"Our Achievement"}></SectionTitle>
 
         {/* company achievement */}
