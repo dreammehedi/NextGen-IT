@@ -1,6 +1,14 @@
+import { Map, Marker, ZoomControl } from "pigeon-maps";
 import SectionTitle from "./../shared/SectionTitle";
 
+import { useState } from "react";
 function ContactUs() {
+  // location
+  const [center, setCenter] = useState([24.104288, 90.097893]);
+
+  // zoom label
+  const [zoom, setZoom] = useState(11);
+
   // handle contact us
   const handleContactUs = (event) => {
     event.preventDefault();
@@ -17,12 +25,37 @@ function ContactUs() {
       <section className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
         <SectionTitle title={"Contact Us"}></SectionTitle>
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
-          {/* contact image */}
-          <img
-            className="hidden lg:inline-block w-full h-fit object-cover mix-blend-multiply"
-            src="https://i.ibb.co/WgVx42N/Screenshot-1.png"
-            alt="contact us"
-          />
+          {/* google maps */}
+          <div className="rounded-md overflow-hidden md:h-fit h-[350px]">
+            <Map
+              height={470}
+              center={center}
+              zoom={zoom}
+              onBoundsChanged={({ center, zoom }) => {
+                setCenter(center);
+                setZoom(zoom);
+              }}
+            >
+              <Marker
+                width={50}
+                anchor={[24.104288, 90.097893]}
+                color={"#007bff"}
+              />
+              <ZoomControl
+                style={{
+                  right: 10,
+                  left: "full",
+                  top: "full",
+                  bottom: 30,
+                  zIndex: 100,
+                }}
+                buttonStyle={{
+                  background: "white",
+                  color: "#007bff",
+                }}
+              ></ZoomControl>
+            </Map>
+          </div>
 
           {/* contact form */}
           <form onSubmit={handleContactUs} className="space-y-4">
