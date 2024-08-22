@@ -47,7 +47,7 @@ function Project() {
               <>
                 <div
                   data-aos="zoom-in"
-                  data-aos-delay={ind * 200}
+                  data-aos-delay={ind * 100}
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                   data-aos-mirror="true"

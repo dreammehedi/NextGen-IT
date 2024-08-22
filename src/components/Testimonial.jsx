@@ -107,14 +107,17 @@ function Testimonial() {
                     <div
                       data-aos="zoom-in"
                       data-aos-duration="1000"
-                      data-aos-delay={ind * 200}
-                      className="bg-[#f9f9f9] p-4 rounded-md shadow-md my-transition hover:shadow-primary/30 hover:scale-[1.03] hover:cursor-pointer h-fit md:h-[300px] space-y-2"
+                      data-aos-easing="ease-in"
+                      data-aos-delay={ind * 300}
+                      className="bg-[#f9f9f9] p-4 rounded-md shadow-md my-transition hover:shadow-primary/30 hover:scale-[1.03] hover:cursor-pointer h-fit md:h-[300px] space-y-2 text-center md:text-left"
                     >
-                      <img
-                        src={image}
-                        alt={name}
-                        className="w-24 h-24 rounded-full"
-                      />
+                      <div className="flex justify-center items-center md:justify-start md:items-start">
+                        <img
+                          src={image}
+                          alt={name}
+                          className="w-24 h-24 rounded-full "
+                        />{" "}
+                      </div>
                       <h3 className="text-xl font-semibold text-primary font-montserrat">
                         {name}
                       </h3>

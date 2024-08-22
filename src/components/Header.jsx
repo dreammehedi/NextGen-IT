@@ -19,7 +19,7 @@ function Header() {
         data-aos-anchor-placement="top-bottom"
         data-aos-offset="0"
         data-aos-once="true"
-        className="py-4 sticky top-0 z-[9999] bg-[#f9f9f9] shadow-md overflow-hidden"
+        className="py-4 sticky top-0 z-[9999] bg-[#f9f9f9] shadow-md"
       >
         <nav className="relative container flex justify-between items-center gap-4">
           {/* logo */}

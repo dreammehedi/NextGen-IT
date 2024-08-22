@@ -48,13 +48,14 @@ function Achievement() {
             return (
               <>
                 <div
-                  data-aos="fade-down"
-                  data-aos-delay={ind * 100}
+                  data-aos="fade-left"
+                  data-aos-delay={ind * 200}
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                   data-aos-mirror="true"
                   data-aos-once="false"
                   data-aos-anchor-placement="top-center"
+                  data-aos-anchor="#achievements"
                   key={ind}
                   className="bg-[#f9f9f9] rounded-md px-5 py-7 lg:p-6 my-transition hover:shadow-md hover:shadow-gray-400 hover:cursor-pointer space-y-3 flex flex-col overflow-hidden"
                 >

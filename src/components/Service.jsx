@@ -67,7 +67,7 @@ function Service() {
             return (
               <>
                 <div
-                  data-aos="fade-up"
+                  data-aos="fade-right"
                   data-aos-delay={ind * 200}
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"

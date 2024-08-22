@@ -5,6 +5,8 @@ function Menu() {
   // State to track the currently hovered menu item
   const [hoveredMenu, setHoveredMenu] = useState(null);
 
+  console.log(hoveredMenu);
+
   return (
     <>
       {/* menu items */}
