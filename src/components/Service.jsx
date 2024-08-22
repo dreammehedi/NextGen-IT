@@ -55,7 +55,7 @@ function Service() {
   return (
     <>
       {/* company services */}
-      <section className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
+      <section id="services" className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
         <SectionTitle title={"Our Services"}></SectionTitle>
 
         {/* company services */}

@@ -35,7 +35,7 @@ function Project() {
   return (
     <>
       {/* company projects */}
-      <section className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
+      <section id="projects" className="py-6 md:py-8 lg:py-10 bg-[#f9f9f9]">
         <SectionTitle title={"Complete Projects"}></SectionTitle>
 
         {/* company projects */}
