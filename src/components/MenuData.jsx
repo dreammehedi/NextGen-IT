@@ -48,6 +48,24 @@ const menuData = [
   {
     title: "Projects",
     link: "#projects",
+    submenu: [
+      {
+        title: "E-Commerce Platform",
+        link: "#e-commerce-plateform",
+      },
+      {
+        title: "Mobile Banking App",
+        link: "#mobile-banking-app",
+      },
+      {
+        title: "Corporate Website Redesign",
+        link: "#corporate-website-redesign",
+      },
+      {
+        title: "Social Media Management Tool",
+        link: "#social-media-management-tool",
+      },
+    ],
   },
   {
     title: "Testimonials",

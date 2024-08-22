@@ -20,7 +20,7 @@ function Header() {
           <ul
             className={`${
               humberger ? "!right-[1.5rem] !visible" : "right-[180px] invisible"
-            } lg:hidden w-auto h-fit absolute top-[52px] z-[99999] bg-white shadow-md p-6 md:p-8 rounded-md flex flex-col gap-4 md:gap-6 font-montserrat font-medium text-black transition-all duration-200 ease-in`}
+            } lg:hidden w-auto h-fit absolute top-[52px] z-[99999] bg-white shadow-md p-4 md:p-6 lg:p-8 rounded-md flex flex-col gap-4 md:gap-6 font-montserrat font-medium text-black transition-all duration-200 ease-in`}
           >
             <Menu></Menu>
           </ul>
