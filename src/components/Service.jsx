@@ -67,7 +67,7 @@ function Service() {
             return (
               <>
                 <div
-                  data-aos="fade-left"
+                  data-aos="fade-up"
                   data-aos-delay={ind * 200}
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
@@ -76,7 +76,7 @@ function Service() {
                   data-aos-anchor-placement="top-center"
                   data-aos-anchor="#services"
                   key={ind}
-                  className="bg-white ring-1 ring-primary rounded-md text-center px-5 py-7 lg:p-6 my-transition hover:shadow-xl hover:shadow-primary/30 hover:cursor-pointer space-y-3 flex flex-col justify-center items-center"
+                  className="bg-white ring-1 ring-primary rounded-md text-center px-5 py-7 lg:p-6 my-transition hover:shadow-xl hover:shadow-primary/30 hover:cursor-pointer space-y-3 flex flex-col justify-center items-center overflow-hidden"
                 >
                   <img
                     src={image}

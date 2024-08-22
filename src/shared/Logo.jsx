@@ -3,9 +3,11 @@ import PropTypes from "prop-types";
 function Logo({ cls }) {
   return (
     <>
-      <h3 className={`${cls} text-xl md:text-2xl font-bold text-primary`}>
-        NextGen IT
-      </h3>
+      <a href="/">
+        <h3 className={`${cls} text-xl md:text-2xl font-bold text-primary`}>
+          NextGen IT
+        </h3>
+      </a>
     </>
   );
 }

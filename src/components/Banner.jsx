@@ -68,10 +68,9 @@ function Banner() {
         data-aos-duration="500"
         data-aos-delay="0"
         data-aos-easing="ease-in-out"
-        data-aos-anchor-placement="top-center"
         data-aos-mirror="true"
         id="banner"
-        className="container overflow-hidden"
+        className="container mt-4 md:mt-6 lg:mt-8 overflow-hidden"
       >
         <Swiper
           spaceBetween={20}

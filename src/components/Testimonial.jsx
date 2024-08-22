@@ -72,7 +72,7 @@ function Testimonial() {
         <SectionTitle title={"Testimonials"}></SectionTitle>
 
         {/* testimonial */}
-        <div className="mt-4 container">
+        <div className="mt-4 container py-2 overflow-hidden">
           <Swiper
             breakpoints={{
               640: {
@@ -95,7 +95,7 @@ function Testimonial() {
             }}
             navigation={true}
             modules={[Autoplay, Navigation]}
-            className="py-4"
+            className="py-4 overflow-hidden"
           >
             {/* testimonial */}
             {testimonial.map((testimonial, ind) => {
