@@ -70,7 +70,7 @@ function Banner() {
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
         id="banner"
-        className="container mt-4 md:mt-6 lg:mt-8 overflow-hidden"
+        className="container py-4 md:py-6 lg:py-8 overflow-hidden"
       >
         <Swiper
           spaceBetween={20}
