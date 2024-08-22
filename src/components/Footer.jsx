@@ -80,7 +80,7 @@ function Footer() {
               <h4 className="text-lg font-semibold text-primary capitalize mb-4">
                 Quick Links
               </h4>
-              <ul className="grid grid-cols-2 gap-4">
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {menuData.map((quickLink, ind) => {
                   const { title, link } = quickLink;
 
