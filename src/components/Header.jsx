@@ -1,31 +1,46 @@
 import Logo from "./../shared/Logo";
 // menu data
-import menu from "./Menu";
+import { useState } from "react";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
+import Menu from "./Menu";
 
 function Header() {
+  // humberger icon change
+  const [humberger, setHumberger] = useState(false);
+
   return (
     <>
       {/* header */}
       <header className="py-4 sticky top-0 z-[9999] bg-[#f9f9f9] shadow-md">
-        <nav className="container flex justify-between items-center gap-4">
+        <nav className="relative container flex justify-between items-center gap-4">
           {/* logo */}
           <Logo></Logo>
+          {/* mobile menu */}
+          <ul
+            className={`${
+              humberger ? "!right-[1.5rem] !visible" : "right-[180px] invisible"
+            } lg:hidden w-auto h-fit absolute top-[52px] z-[99999] bg-white shadow-md p-6 md:p-8 rounded-md flex flex-col gap-4 md:gap-6 font-montserrat font-medium text-black transition-all duration-200 ease-in`}
+          >
+            <Menu></Menu>
+          </ul>
 
           {/* desktop menu */}
-          <ul className="hidden md:flex justify-center items-center gap-4 md:gap-6 font-montserrat font-medium text-black">
-            {menu.map((menu, ind) => {
-              const { title, link } = menu;
-              return (
-                <>
-                  <li key={ind}>
-                    <a href={link} className="my-transition hover:text-primary">
-                      {title}
-                    </a>
-                  </li>
-                </>
-              );
-            })}
+          <ul className="hidden lg:flex justify-center items-center gap-4 md:gap-6 font-montserrat font-medium text-black">
+            <Menu></Menu>
           </ul>
+
+          {/* hamburger menu icon */}
+          <button
+            onClick={() => {
+              setHumberger(!humberger);
+            }}
+            className={`${
+              humberger && "bg-primary text-white"
+            } lg:hidden text-xl ring-1 ring-primary p-2 rounded-md my-transition hover:bg-primary hover:text-white`}
+          >
+            {humberger ? <IoClose /> : <FaBarsStaggered />}
+          </button>
         </nav>
       </header>
     </>

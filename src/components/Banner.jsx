@@ -89,7 +89,7 @@ function Banner() {
                     style={{
                       background: `linear-gradient(4deg, #a0a0a087, #0205234d), url(${backgroundImage})`,
                     }}
-                    className="w-full h-[600px] rounded-md overflow-hidden min-h-[500px] !bg-no-repeat !bg-cover !bg-center text-white flex flex-col justify-center items-center text-center "
+                    className="w-full h-[400px] md:h-[450px] lg:h-[550px] rounded-md overflow-hidden lg:min-h-[500px] !bg-no-repeat !bg-cover !bg-center text-white flex flex-col justify-center items-center text-center "
                   >
                     <div className="container space-y-3">
                       <h1 className="text-primary font-bold text-3xl lg:text-4xl">

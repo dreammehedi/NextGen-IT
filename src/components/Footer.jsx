@@ -1,8 +1,7 @@
 import Logo from "../shared/Logo";
 
 // quick links data
-import menu from "./Menu";
-
+import menuData from "./MenuData";
 // const quickLinks = [
 //   {
 //     title: "Home",
@@ -62,7 +61,7 @@ function Footer() {
                 Quick Links
               </h4>
               <ul className="grid grid-cols-2 gap-4">
-                {menu.map((quickLink, ind) => {
+                {menuData.map((quickLink, ind) => {
                   const { title, link } = quickLink;
 
                   return (
