@@ -15,12 +15,12 @@ function Menu() {
             <a
               onMouseOver={() => {
                 if (submenu) {
-                  setHoveredMenu(title); // Set the hovered menu
+                  setHoveredMenu(title);
                 }
               }}
               onMouseOut={() => {
                 if (submenu) {
-                  setHoveredMenu(null); // Reset the hovered menu
+                  setHoveredMenu(null);
                 }
               }}
               href={link}
@@ -37,7 +37,7 @@ function Menu() {
                   hoveredMenu === title
                     ? "flex top-[12px] lg:top-[42px]"
                     : "invisible top-[100px]"
-                } w-[220px] absolute -left-[230px] lg:left-0 flex-col bg-white shadow-md p-4 rounded-md gap-1 font-montserrat font-medium text-black my-transition text-right lg:text-left`}
+                } !z-[9999999] w-[220px] absolute -left-[230px] lg:left-0 flex-col bg-white shadow-md p-4 rounded-md gap-1 font-montserrat font-medium text-black my-transition text-right lg:text-left`}
               >
                 {submenu.map((submenuItem, submenuInd) => {
                   const { link, title } = submenuItem;
